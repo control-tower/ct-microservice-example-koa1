@@ -1,0 +1,31 @@
+{
+  "name": "ct-microservice-example-koa1",
+  "version": "1.0.0",
+  "description": "Example microservice in koa1 ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env $(cat dev.env | xargs) node index.js | bunyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/control-tower/ct-register-microservice-node.git"
+  },
+  "keywords": [
+    "register",
+    "microservice",
+    "api-gateway",
+    "control-tower",
+    "koa"
+  ],
+  "author": "Ra <rrequero@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/control-tower/ct-register-microservice-node/issues"
+  },
+  "homepage": "https://github.com/control-tower/ct-register-microservice-node#readme",
+  "dependencies": {
+    "bunyan": "^1.8.1",
+    "koa": "1.1.2",
+    "koa-bodyparser": "2.0.1"
+  }
+}

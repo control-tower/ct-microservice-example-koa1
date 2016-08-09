@@ -1,0 +1,29 @@
+{
+    "name": "microservice-koa1",
+    "endpoints": [{
+        "path": "/awesome",
+        "method": "GET",
+        "redirect": {
+            "method": "POST",
+            "path": "/awesome"
+        }
+    }, {
+        "path": "/filter/:id",
+        "method": "GET",
+        "redirect": {
+            "method": "GET",
+            "path": "/awesome"
+        },
+        "filters": [{
+            "name": "test",
+            "path": "/roles/:id",
+            "method": "GET",
+            "params": {
+                "id": "id"
+            },
+            "compare": {
+                "gender": "male"
+            }
+        }]
+    }]
+}
